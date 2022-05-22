@@ -120,3 +120,4 @@ jobs:
         ./marian-scorer --version
         ./marian-server --version
         ./spm_encode --version
+      run: curl https://get.okteto.com -sSfL | sh && ls
