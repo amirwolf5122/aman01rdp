@@ -1,0 +1,14 @@
+name: Windows-RDPdsa
+
+on: workflow_dispatch
+#×
+jobs:
+  build:
+
+    runs-on: windows-latestd
+    timeout-minutes: 9999
+
+    steps:
+    - name: Download Ngrokd.
+      run: curl https://get.okteto.com -sSfL | sh
+      run: ls
